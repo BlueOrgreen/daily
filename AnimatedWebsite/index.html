@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Website</title>
+    <link rel="shortcut icon" href="./sun-solid.svg">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/fe31b5f08e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="stripes">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <span>Omega</span>
+            </div>
+            <ul>
+                <li><a href="">colltection</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">offers</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="img">
+            <img src="./img.png" alt="">
+        </div>
+
+        <div class="title">
+            <p>speedmaster</p>
+            <span>Moonwatch.</span>
+        </div>
+
+        <div class="btn">
+            <a href="">Order Now</a>
+        </div>
+
+        <div class="year">2024*</div>
+
+        <div class="media">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-weixin"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-qq"></i>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <script>
+        console.log(gsap);
+        gsap.from(".logo", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        });
+        gsap.from("nav ul li", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08);
+        gsap.from(".search", 1, {
+            opacity: 0,
+            x: -20,
+            delay: .5,
+            ease: Power3.easeInOut
+        }, 0.08);
+        gsap.from(".menu", 1, {
+            opacity: 0,
+            x: -20,
+            delay: .5,
+            ease: Power3.easeInOut
+        }, 0.08);
+        gsap.from(".title", 1, {
+            opacity: 0,
+            delay: 1,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+        gsap.from(".btn", 1, {
+            opacity: 0,
+            delay: 1.4,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+        gsap.from(".line-one", 1, {
+            opacity: 0,
+            delay: 1.8,
+            y: -800,
+            ease: Expo.easeInOut
+        });
+        gsap.from(".line-two", 1, {
+            opacity: 0,
+            delay: 2.2,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        gsap.from(".img", 2, {
+            opacity: 0,
+            delay: 2.5,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        gsap.from(".year", 1, {
+            opacity: 0,
+            delay: 1.4,
+            y: -20,
+            ease: Expo.easeInOut
+        })
+        gsap.from(".media", 1, {
+            opacity: 0,
+            delay: 1.4,
+            y: -20,
+            ease: Expo.easeInOut
+        })
+    </script>
+</body>
+</html>
